@@ -6,5 +6,9 @@ def myHomeView(request, *args, **kwargs):
    print(args, kwargs)
    print(request.user)
    return render(request, "home.html",{})
+   
+def myPersonalView(request, *args, **kwargs):
+    return render(request, "personal.html", {})
+    
 def anotherView(request):
    return HttpResponse('<h1>Solo otra pagina</h1>') 
